@@ -1,0 +1,89 @@
+:root {
+  --ion-color-primary: #1f5f7a;
+  --ion-color-primary-rgb: 31, 95, 122;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #1b546b;
+  --ion-color-primary-tint: #356f87;
+  --ion-background-color: #eef2f3;
+  --star-on: #f0b429;
+  --star-off: #c5d0d4;
+}
+
+.stats {
+  display: flex;
+  gap: 24px;
+  padding: 16px;
+}
+.stats div { display: flex; flex-direction: column; }
+.stats strong { font-size: 1.8rem; line-height: 1.1; }
+.stats span { font-size: 0.8rem; color: var(--ion-color-medium); }
+
+.stars { display: flex; gap: 2px; }
+.star-btn {
+  background: none; border: 0; padding: 2px; font-size: 26px; line-height: 1;
+  color: var(--star-off); cursor: pointer;
+}
+.star-btn.on { color: var(--star-on); }
+.star-btn:disabled { cursor: default; }
+
+.empty { text-align: center; padding: 40px 24px; color: var(--ion-color-medium); }
+.form-error { color: var(--ion-color-danger); font-size: 0.85rem; padding: 0 16px; }
+
+.auth-wrap { max-width: 420px; margin: 0 auto; padding: 48px 16px 24px; }
+.auth-wrap h1 { font-size: 1.8rem; margin: 0 0 4px; }
+.auth-sub { color: var(--ion-color-medium); margin: 0 0 24px; }
+.auth-btn { margin-top: 20px; }
+.auth-wrap .form-error { padding: 12px 0 0; margin: 0; }
+.form-ok {
+  margin: 12px 0 0; padding: 10px 12px; font-size: 0.9rem; border-radius: 10px;
+  color: var(--ion-text-color, inherit); background: rgba(46, 125, 87, 0.14);
+  border-left: 4px solid var(--ion-color-success);
+}
+
+.greet { margin: 16px 16px 0; font-size: 1.4rem; }
+.demo { font-size: 0.8rem; color: var(--ion-color-medium); margin: 12px 0 0; }
+.detail-head { padding: 20px 16px 8px; }
+.detail-head h2 { margin: 0; font-size: 1.5rem; }
+.detail-head p { margin: 4px 0 0; color: var(--ion-color-medium); }
+.profile { text-align: center; padding: 28px 16px 0; }
+.profile h2 { margin: 12px 0 0; }
+.profile p { margin: 2px 0 0; color: var(--ion-color-medium); }
+.avatar { width: 72px; height: 72px; border-radius: 50%; margin: 0 auto; background: var(--ion-color-primary); color: #fff; font-size: 2rem; display: flex; align-items: center; justify-content: center; }
+ion-progress-bar { margin-top: 8px; }
+
+.splash {
+  position: fixed; inset: 0; z-index: 99;
+  background: var(--ion-color-primary); color: #fff;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;
+  animation: splash-in 0.9s ease;
+}
+.splash h1 { margin: 0; font-family: Georgia, serif; font-size: 2.6rem; letter-spacing: 0.03em; }
+@keyframes splash-in { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: none; } }
+
+.scores { font-size: 0.8rem; }
+.about { margin-top: 10px !important; color: var(--ion-text-color) !important; line-height: 1.45; }
+.rb { margin: 12px 16px; background: var(--ion-item-background, #fff); border: 1px solid var(--ion-color-light-shade, #ddd); border-radius: 10px; }
+.rb > div { display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; border-bottom: 1px solid var(--ion-color-light-shade, #ddd); }
+.rb > div:last-child { border-bottom: 0; }
+.rb small { color: var(--ion-color-medium); }
+
+.meter { margin: 4px 16px 8px; width: auto; }
+.chips { padding: 12px 16px 0; }
+.chips ion-label { display: block; font-size: 0.85rem; margin-bottom: 6px; }
+.chips ion-chip { margin-left: 0; }
+
+.rules { list-style: none; margin: 0; padding: 8px 16px 4px; font-size: 0.82rem; color: var(--ion-color-medium); }
+.rules li { display: flex; align-items: center; gap: 6px; padding: 2px 0; }
+.rules li.ok { color: var(--ion-color-success-shade); }
+
+.match { display: flex; align-items: center; gap: 6px; margin: 0; padding: 6px 16px 0; font-size: 0.82rem; }
+.match.ok { color: var(--ion-color-success-shade); }
+.match.bad { color: var(--ion-color-danger); }
+
+.swatches { display: flex; flex-wrap: wrap; gap: 10px; padding-top: 6px; }
+.sw { width: 38px; height: 38px; border-radius: 50%; border: 0; color: #fff; font-size: 22px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.sw.on { outline: 3px solid var(--ion-text-color, #17262c); outline-offset: 2px; }
+
+.cover { display: block; width: 96px; margin: 0 0 12px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.25); }
+ion-thumbnail { --size: 56px; --border-radius: 4px; }

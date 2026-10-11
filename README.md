@@ -26,7 +26,7 @@ npm install
 npm run dev
 Abra o endereço que aparecer no terminal (normalmente http://localhost:5173).
 
-Conta de teste (já com algumas leituras): demo@dogear.com / 123456
+Conta de teste (já com algumas leituras): demo@dogear.com / 123456 ou realizar o cadastro para realizar uma nova conta
 
 Tecnologias
 JavaScript (ES6+ com JSX) · React 18 · Ionic React 8 · React Router 5 · Vite 5 · Ionicons · Web Crypto API (SHA-256) · localStorage · Google Books API (fetch)

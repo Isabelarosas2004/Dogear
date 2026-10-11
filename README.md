@@ -1,5 +1,7 @@
+
 Dogear
-Dogear é um aplicativo para acompanhar suas leituras e descobrir o próximo livro. O nome vem de dog-ear, a "orelha" que se dobra no canto da página para marcar onde você parou, e é isso que o logo mostra: um livro com o canto dobrado.
+
+é um aplicativo para acompanhar suas leituras e descobrir o próximo livro. O nome vem de dog-ear, a "orelha" que se dobra no canto da página para marcar onde você parou, e é isso que o logo mostra: um livro com o canto dobrado.
 
 Com o Dogear você pesquisa livros em um catálogo que já vem dentro do app (24 livros) e que é complementado com livros da API do Google Books, marca o que está lendo, o que já leu e o que quer ler, dá nota de 1 a 5 estrelas, vê o que leitores e críticos acharam e recebe recomendações baseadas no seu gosto.
 
@@ -30,6 +32,7 @@ Tecnologias
 JavaScript (ES6+ com JSX) · React 18 · Ionic React 8 · React Router 5 · Vite 5 · Ionicons · Web Crypto API (SHA-256) · localStorage · Google Books API (fetch)
 
 Organização das pastas
+
 src/
   pages/        telas (Login, Cadastro, Início, Explorar, Favoritos, Detalhe, Perfil)
   components/   peças visuais reutilizáveis (BookItem, StarRating, Splash...)
@@ -38,6 +41,7 @@ src/
   theme/        cores e estilos
   App.jsx       rotas e abas
   main.jsx      ponto de entrada
+
 Observações
 Os 24 livros do catálogo, as críticas e as avaliações dos leitores são fictícios, criados para demonstração (src/data/catalog.js). Os livros do Google Books são reais, mas não têm críticas, e o app mostra a nota deles só quando a API a fornece.
 Não existe servidor: contas, notas e preferências ficam salvas no próprio aparelho (localStorage). Por isso, cada navegador ou aparelho tem seus próprios dados.
